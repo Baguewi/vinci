@@ -51,18 +51,17 @@
           "id": "road-major-link-navigation-mousemove",
           "type": "line",
           "source": "composite",
-          "source-layer": "road",
+          "source-layer": "bretelle-6soouq",
           "minzoom": 11,
-          "filter": [ "all", ["match", ["get", "class"], ["motorway_link"], true, false] ],
           "paint": {
             "line-width": [
               "interpolate",
               ["exponential", 1.5],
               ["zoom"],
-              12, 0.75,
+              12, 1,
               14, 2,
-              18, 20,
-              22, 200
+              18, 3,
+              22, 4
             ],
             'line-opacity': [ 'case', [ 'boolean', ['feature-state', 'hover'], false], 1, 0 ],
             'line-color': [ 'case', [ 'boolean', ['feature-state', 'hover'], false], '#f00', 'hsl(230, 87%, 68%)' ]
